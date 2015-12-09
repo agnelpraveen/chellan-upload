@@ -64,7 +64,7 @@ var app = {
     },	
 	
 	getPictureFromCamera: function() {
-		navigator.camera.getPicture(onSuccess, onFail, { quality: 5, destinationType:Camera.DestinationType.DATA_URL }); 
+		navigator.camera.getPicture(onSuccess, onFail, { quality: 30, destinationType:Camera.DestinationType.DATA_URL }); 
 
 		function onSuccess(imageData) {
 			app.chellanImageData = imageData;
